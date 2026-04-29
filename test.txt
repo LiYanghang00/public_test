@@ -1,0 +1,15 @@
+﻿openresty -t
+
+openresty -s reload
+
+
+| 启动 
+sudo systemctl start openresty
+| 停止 
+sudo systemctl stop openresty
+| 重载配置
+sudo systemctl reload openresty
+| 查看状态 
+sudo systemctl status openresty
+| 查看日志 
+sudo journalctl -u openresty -f
